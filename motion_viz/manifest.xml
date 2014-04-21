@@ -1,0 +1,12 @@
+<package>
+  <description brief="motion_viz">
+    visualization tools for twists, jacobians and virtual kinematic chains.
+  </description>
+  <author>Ingo Kresse</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <depend package="geometry_msgs"/>
+  <depend package="robohow_common_msgs"/>
+  <depend package="rospy"/>
+  <depend package="kdl"/>
+</package>
