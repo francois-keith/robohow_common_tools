@@ -1,0 +1,16 @@
+<package>
+  <name>robohow_common_tools</name>
+  <version>0.1.0</version>
+  <description>
+    Tools for robohow messages (checking, visualization...)
+  </description>
+  <maintainer email="keith@lirmm.fr">Francois Keith</maintainer>
+  <license>BSD</license>
+  <export>
+    <metapackage />
+  </export>
+  <buildtool_depend>catkin</buildtool_depend> 
+  <run_depend>robohow_common_msgs</run_depend>
+</package>
+
+
