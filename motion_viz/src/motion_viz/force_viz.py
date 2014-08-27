@@ -5,7 +5,6 @@
 from math import *
 
 import roslib
-roslib.load_manifest('motion_viz')
 import rospy
 from std_msgs.msg import ColorRGBA
 from visualization_msgs.msg import Marker,MarkerArray

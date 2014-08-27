@@ -1,12 +1,16 @@
 <package>
-  <description brief="motion_viz">
+  <name>motion_viz</name>
+  <version>0.1.0</version>
+  <description>
     visualization tools for twists, jacobians and virtual kinematic chains.
   </description>
-  <author>Ingo Kresse</author>
+  <maintainer email="kresse@in.tum.de">Ingo Kresse</maintainer>
   <license>BSD</license>
-  <review status="unreviewed" notes=""/>
+  <buildtool_depend>catkin</buildtool_depend> 
+<!--
   <depend package="geometry_msgs"/>
   <depend package="robohow_common_msgs"/>
   <depend package="rospy"/>
   <depend package="kdl"/>
+-->
 </package>

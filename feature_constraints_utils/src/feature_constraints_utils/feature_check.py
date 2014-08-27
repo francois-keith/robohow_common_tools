@@ -4,13 +4,9 @@
 # publishes an error if they do not make sense
 
 import roslib
-roslib.load_manifest('robohow_common_msgs')
 import rospy
 
 from robohow_common_msgs.msg import ConstraintConfig, Constraint, Feature
-
-roslib.load_manifest('robohow_common_tools')
-#from robohow_sot.utils import *
 
 """
 Check the if a constraint has a meaning.

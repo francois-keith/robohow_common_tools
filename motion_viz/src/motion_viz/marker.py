@@ -3,7 +3,6 @@
 from math import *
 
 import roslib
-roslib.load_manifest('visualization_msgs')
 import rospy
 import PyKDL as kdl
 

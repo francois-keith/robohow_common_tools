@@ -1,0 +1,16 @@
+<package>
+  <name>feature_constraints_utils</name>
+  <version>0.1.0</version>
+  <description>
+    This packace contains utility packages for the feature
+    constraints controller. Note, some of them might still
+    be unfinished. Just a few things to test out...
+  </description>
+  <maintainer email="kresse@in.tum.de">Ingo Kresse</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend> 
+  <build_depend>rospy</build_depend>
+  <build_depend>robohow_common_msgs</build_depend>
+  <run_depend>robohow_common_msgs</run_depend>
+</package>
+
