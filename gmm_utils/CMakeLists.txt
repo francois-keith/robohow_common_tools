@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(gmm_utils)
 
-find_package(catkin REQUIRED COMPONENTS robohow_common_msgs
+find_package(catkin REQUIRED COMPONENTS robohow_common_msgs rospy
 )
 
 catkin_python_setup()
