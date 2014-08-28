@@ -54,14 +54,14 @@ def checkConstraintCoherence(c):
     else :
       rospy.logwarn('Unable to compute the angle between ' + toolType + '/' + worldType)
 
-  if operation == 3: #'position'
+  if c.function == 3: #'position'
     # point / point
     if (toolType == POINT and worldType == POINT):
       return
     else:
       rospy.logwarn('Unable to compute the angle between ' + toolType  + '/' + worldType)
 
-  if operation == 4: # pointing_at
+  if c.function == 4: # pointing_at
     return 
 
 
