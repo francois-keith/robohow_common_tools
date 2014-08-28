@@ -2,7 +2,7 @@ language: cpp
 compiler: gcc
 env:
   global:
-  - ROS_VERSION=hydro
+  - ROS_DISTRO=hydro
   - APT_DEPENDENCIES="ros-hydro-geometry-msgs"
   - ROS_GIT_DEPENDENCIES="francois-keith/robohow_common_msgs:catkin"
 notifications:
