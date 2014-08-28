@@ -21,7 +21,7 @@ ConstraintConfig message.
 
 import roslib
 import PyKDL as kdl
-import motion_viz.marker
+import motion_viz.marker as marker
 import rospy
 import tf
 import tf_conversions.posemath as pm
@@ -479,12 +479,13 @@ class ConstraintDisplay:
 
   def transform(self):
     for f in self.tool_features.values() + self.world_features.values():
-      try:
-        frame = self.listener.lookupTransform(self.base_frame_id,
-                                              f.frame_id, rospy.Time(0))
-      except:
-        continue
-      f.transform(pm.fromTf(frame))
+      if f.frame_id != '':
+        try:
+          frame = self.listener.lookupTransform(self.base_frame_id,
+                                                f.frame_id, rospy.Time(0))
+        except:
+          continue
+        f.transform(pm.fromTf(frame))
 
   def show(self):
     markers = []
